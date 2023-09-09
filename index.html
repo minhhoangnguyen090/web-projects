@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Cheatsheet</title>
+    <link rel="shortcut icon" href="./resources/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./resources/css/index.css">
+</head>
+<body>
+    <!--Nav section-->
+    <nav class="topnav">
+        <img id="codelogo" src="./resources/images/codelogo.png" alt="codecheatsheet"/>
+        <ul>
+            <li><a id="nav" href="#html">HTML</a></li>
+            <li><a id="nav" href="#cited">References</a></li>
+        </ul>
+        <div class="search-container">
+            <form action="">
+            <input type="text" placeholder="search.." name="search">
+            <button type="submit">Enter</button>
+            </form>
+        </div>
+    </nav>
+    <!--Body section-->
+    <div class="main">
+        <!--Fitler sidebar section-->
+        <div class="body filter">
+            <input type="text" id="mysearch" onkeyup="myFunction()" placeholder="Quick Nav.." title="Type in a category">
+            <ul id="myMenu">
+                <li><a href="#definition">HTML Definition</a></li>
+                <li><a href="#tag-basic">HTML Tag Basic</a></li>
+                <li><a href="#table">HTML Table</a></li>
+                <li><a href="#form">HTML Form</a></li>
+            </ul>
+        </div>
+        <!--Content section-->
+        <div class="body content inline">
+            <!--Tag-->
+            <h1 id="html">HTML</h1>
+            <span id="author"><i><u>Author: Hoang Nguyen</u></i></span>
+            <br>
+            <span>Post day:</span>
+            <time datetime="2023-09-07">7<sup>th</sup> September 2023</time>
+            <hr>
+            <dl id="definition"><h3>HTML Definition</h3></dl>
+                <dd><p><a href="https://en.wikipedia.org/wiki/HTML">Hypertext Markup Language</a>, a standardized system for tagging text files to achieve font, color, graphic, and hyperlink effects on World Wide Web pages.</p></dd>
+            <dl id="tag-basic"><h3>Html Tag Basic</h3></dl>
+                <dd id="htmltag"><span id="bluelink">&lt;head&gt;</span>: The head HTML element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.</dd>
+                <dd id="htmltag"><span id="bluelink">&lt;link&gt;</span>: The link HTML element specifies relationships between the current document and an external resource.</dd>
+                <dd id="htmltag"><span id="bluelink">&lt;meta&gt;</span>: The meta tag defines metadata about an HTML document.</dd>
+                <dd id="htmltag"><span id="bluelink">&lt;header&gt;</span>: The header HTML element represents introductory content, typically a group of introductory or navigational aids.</dd>
+                <dd id="htmltag"><span id="bluelink">&lt;body&gt;</span>: The body HTML element represents the content of an HTML document. There can be only one body element in a document.</dd>
+                <dd id="htmltag"><span id="bluelink">&lt;footer&gt;</span>: The footer HTML element represents a footer for its nearest ancestor sectioning content or sectioning root element.</dd>
+                <dd id="htmltag"><span id="bluelink">&lt;div&gt;</span>: The div HTML element is the generic container for flow content.</dd>
+                <dd id="htmltag"><span id="bluelink">&lt;h1&gt;</span>: The h1 to h6 HTML elements represent six levels of section headings. h1 is the highest section level and h6 is the lowest.</dd>
+                <dd id="htmltag"><span id="bluelink">&lt;p&gt;</span>: The p HTML element represents a paragraph.</dd>
+                <dd id="htmltag"><span id="bluelink">&lt;img&gt;</span>: The img HTML element embeds an image into the document.</dd>
+                <dd id="htmltag"><span id="bluelink">&lt;video&gt;</span>: The video HTML element embeds a media player which supports video playback into the document.</dd>
+                <dd id="htmltag"><span id="bluelink">&lt;embed&gt;</span>: The embed HTML element embeds external content at the specified point in the document.</dd>
+                <dd id="htmltag"><span id="bluelink">&lt;audio&gt;</span>: The audio HTML element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the source element: the browser will choose the most suitable one. </dd>
+            <!--Table-->
+            <span id="table"><h3>HTML Table</h3></span>
+            <table class="table-example">
+                <thead>
+                    <tr>
+                        <th>Tag</th>
+                        <th style="width: 10%;">Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="bluelink">&lt;table&gt;</span></td>
+                        <td>Table</td>
+                        <td>The table HTML element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.</td>
+                    </tr>
+                    <tr>
+                        <td><span id="bluelink">&lt;thead&gt;</span></td>
+                        <td>Table Head</td>
+                        <td>The thead HTML element defines a set of rows defining the head of the columns of the table. </td>
+                    </tr>
+                    <tr>
+                        <td><span id="bluelink">&lt;tbody&gt;</span></td>
+                        <td>Table Body</td>
+                        <td>The tbody HTML element encapsulates a set of table rows (tr elements), indicating that they comprise the body of the table (table).</td>
+                    </tr>
+                    <tr>
+                        <td><span id="bluelink">&lt;tfoot&gt;</span></td>
+                        <td>Table Foot</td>
+                        <td>The tfoot HTML element defines a set of rows summarizing the columns of the table.</td>
+                    </tr>
+                    <tr>
+                        <td><span id="bluelink">&lt;tr&gt;</span></td>
+                        <td>Table Row</td>
+                        <td>The tr HTML element defines a row of cells in a table. </td>
+                    <tr>
+                        <td><span id="bluelink">&lt;td&gt;</span></td>
+                        <td>Table Data</td>
+                        <td>The td HTML element defines a cell of a table that contains data.</td>
+                </tbody>
+            </table>
+        <!--Form-->
+            <span id="form"><h3>HTML Form</h3></span>
+            <table class="form-example">
+                <thead>
+                    <th>Input</th>
+                    <th>Description</th>
+                    <th style="width: 30%;">Example</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span id="bluelink">&lt;text&gt;</span></td>
+                        <td>input elements of type text create basic single-line text fields.</td>
+                        <td>
+                            <label for="text">Text:</label>
+                            <input type="text" name="text" id="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span id="bluelink">&lt;number&gt;</span></td>
+                        <td>input elements of type number create basic single-line text fields.</td>
+                        <td>
+                            <label for="number">Number:</label>
+                            <input type="number" name="number" id="number">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span id="bluelink">&lt;range&gt;</span></td>
+                        <td>input elements of type range let the user specify a numeric value which must be no less than a given value, and no more than another given value.</td>
+                        <td>
+                            <label for="range">Range:</label>
+                            <span>1</span>
+                            <input type="range" name="range" id="range" min="1" max="10" step="1" value="5">
+                            <span>10</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span id="bluelink">&lt;checkbox&gt;</span></td>
+                        <td>input elements of type checkbox are rendered by default as boxes that are checked (ticked) when activated, like you might see in an official government paper form.</td>
+                        <td>
+                            <label for="checkbox">Check Box:</label>
+                            <input type="checkbox" name="checkbox" id="checkbox">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span id="bluelink">&lt;radio&gt;</span></td>
+                        <td>input elements of type radio are generally used in radio groups—collections of radio buttons describing a set of related options.</td>
+                        <td>
+                            <label for="radio">Radio Button:</label>
+                            <input type="radio" name="radio" id="radio">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span id="bluelink">&lt;select&gt;</span></td>
+                        <td>The select HTML element represents a control that provides a menu of options.</td>
+                        <td>
+                            <span>Select:</span>
+                            <select name="select" id="select">
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span id="bluelink">&lt;datalist&gt;</span></td>
+                        <td>The datalist HTML element contains a set of option elements that represent the permissible or recommended options available to choose from within other controls.</td>
+                        <td>
+                            <label for="list">Datalist:</label>
+                            <input name="datalist" id="list" list="connect">
+                            <datalist id="connect">
+                                <option value="Choose option"></option>
+                                <option value="Yes"></option>
+                                <option value="No"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span id="bluelink">&lt;textarea&gt;</span></td>
+                        <td>input elements of type submit are rendered as buttons. </td>
+                        <td>
+                            <label for="textarea">Textarea:</label>
+                            <textarea name="textarea" id="textarea" rows="1" cols="20">Type Your Opinion</textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><span id="bluelink">&lt;submit&gt;</span></td>
+                        <td>input elements of type submit are rendered as buttons. </td>
+                        <td>
+                            <label for="submit">Submit Button:</label>
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--subscribe section-->
+        <div class="body right-sidebar inline">
+            <img src="./resources/images/bookcover.jpg" alt="bookcode">
+            <br>
+            <span><b>Level up your code skill with best-selling book code</b></span>
+            <br>
+            <span>Subscribe me to get the ebook</span>
+            <br>
+            <form action="">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <br>
+                <input class="submit" type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+    <div class="ref">
+        <span id="cited"><h3>REFERENCES</h3></span>
+            <ol>
+                <li><cite>https://en.wikipedia.org/wiki/HTML</cite></li>
+            </ol>
+    </div>
+</body>
+<footer>
+    <span>Phone number: 0933237090</span>
+    <address>20 Chau Thi Vinh Te, My An, Ngu Hanh Son, Da Nang</address>
+    <a href="mailto:minhhoang.nguyen.vtp@gmail.com">Email me to discuss more about the cheatsheet</a>
+</footer>
+</html>

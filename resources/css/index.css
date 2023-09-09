@@ -1,0 +1,176 @@
+/* Nav Display, Position, & Style*/
+.topnav {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0px;
+    margin: -30px -10px;
+    display: flex;
+    z-index: 10;
+}
+
+#codelogo {
+    width: 90px;
+    height: 50px;
+    padding: 0px 1px 10px 100px;
+    margin-top: 20px;
+    
+}
+
+.topnav ul {
+    margin: 20px 0px 0px 0px;
+    padding: 10px 0px 0px 40px;
+}
+
+.topnav ul li {
+    display: inline-block;
+    padding: 0px 10px;
+    margin: 20px 0px 0px 0px;
+}
+
+#nav {
+    color:azure;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.topnav li #nav:hover {
+    color: blue;
+}
+
+.search-container form {
+    padding-top: 35px;
+    padding-left: 600px;
+}
+
+.search-container form input {
+    width: 250px;
+    height: 30px;
+}
+
+.search-container form button {
+    width: 60px;
+    height: 35px;
+}
+
+/* Filter Sidebar display, positioning, style */
+
+.filter {
+    height: 100%;
+    width: 190px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: bisque;
+    overflow-x: hidden;
+    padding-top: 110px;
+    text-align: left;
+}
+
+.filter input {
+    margin-left: 10px;
+}
+
+.filter ul {
+    padding-left: 10px;
+}
+
+.filter ul li {
+    list-style-type: none;
+}
+
+.filter ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.filter ul li a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+
+/* Content Sidebar display, positioning, style */
+
+.main {
+    display: flex;
+    position: relative;
+}
+
+.content {
+    padding-left: 190px;
+}
+
+.inline {
+    background-color: #fbfbfb;
+    padding-top: 75px;
+}
+
+#bluelink {
+    color: blue;
+    background-color: aliceblue;
+    font-weight: 700;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+table thead tr th  {
+    background-color: aqua;
+}
+
+table tbody tr td  {
+    background-color: #fbfbfb;
+}
+
+/* Subscribe section display, positioning, style */
+
+.right-sidebar {
+    text-align: center;
+    line-height: 22px;
+    padding-left: 10px;
+}
+
+.right-sidebar img {
+    filter: drop-shadow(5px 5px 5px black);
+}
+
+.submit:hover {
+    background-color: gold;
+    font-size: 110%;
+}
+
+.right-sidebar form {
+    line-height: 30px;
+}
+
+.submit {
+    width: 80px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+/* Reference section display, positioning, style */
+
+.ref {
+    padding-left: 190px;
+}
+
+/* Footer section display, positioning, style */
+
+footer {
+    padding-left: 190px;
+}
+
+footer a:hover {
+    color: red;
+}
